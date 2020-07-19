@@ -35,6 +35,8 @@ public class UnityPublicVariables : MonoBehaviour
     public TMPro.TextMeshProUGUI saveButtonText_4;
     public TMPro.TextMeshProUGUI saveButtonText_5;
     public TMPro.TextMeshProUGUI saveButtonText_6;
+    public GameObject overwritePanel;
+    public GameObject subSavePanel;
 
     // CameraRoatation script variables
     public float rotationSpeed = 30;
@@ -134,7 +136,16 @@ public class UnityPublicVariables : MonoBehaviour
     {
         return ioInteriorObjHeight;
     }
-    
+
+    public GameObject GetOverwritePanel()
+    {
+        return overwritePanel;
+    }
+    public GameObject GetSubSavePanel()
+    {
+        return subSavePanel;
+    }
+
     public float GetRotationSpeed()
     {
         return rotationSpeed;
