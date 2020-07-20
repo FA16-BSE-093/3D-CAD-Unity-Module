@@ -21,7 +21,6 @@ public class ObjectDragable : MonoBehaviour, IPointerClickHandler
         {
             ModelObjectDragable(true);// Enable drag
             InteriorObjectDragable(true);
-            print("a");
 
             /*ModelObjectDragable(true);
             InteriorObjectDragable(true);*/
@@ -30,7 +29,6 @@ public class ObjectDragable : MonoBehaviour, IPointerClickHandler
         {
             ModelObjectDragable(false);// Dis-able drag
             InteriorObjectDragable(false);
-            print("b");
 
             /*ModelObjectDragable(false);
             InteriorObjectDragable(false);*/

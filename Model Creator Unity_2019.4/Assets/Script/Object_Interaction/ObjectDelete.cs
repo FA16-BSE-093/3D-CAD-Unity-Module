@@ -15,9 +15,7 @@ public class ObjectDelete : MonoBehaviour,  IPointerClickHandler
         }
         else
         {
-            print(InstantiatedGameObject._obj.GetInstantiatedInteriorObj(gameObject).GetObjName());
-            var resDel = InstantiatedGameObject._obj.DeleteGameObjectInterior(InstantiatedGameObject._obj.GetInstantiatedInteriorObj(gameObject));
-            print(resDel);
+            InstantiatedGameObject._obj.DeleteGameObjectInterior(InstantiatedGameObject._obj.GetInstantiatedInteriorObj(gameObject));
             DestroyUIElement("UIElment_Dynamic_InteriorObj(Clone)");
         }
 

@@ -33,7 +33,6 @@ public class Object_InfoPanel : MonoBehaviour, IPointerClickHandler
             }
             else
             {
-                print("abc");
                 GetInteriorObjData(name);
             }
         }

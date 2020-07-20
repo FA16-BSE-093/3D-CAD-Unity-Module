@@ -10,7 +10,7 @@ public class CreateGameObject
         var gameObject = GameObject.Instantiate(prefab, startPosition, Quaternion.identity);
         gameObject.AddComponent<ObjectColor>();// Attaching ObjectColor script
         gameObject.AddComponent<ObjectReplace_Model>();// Attaching ObjectReplace_Model script
-        gameObject.AddComponent<ObjectDrag>();// Attaching ObjectDrag script
+        gameObject.AddComponent<ObjectDrag>();// Attaching ObjectDrag script///    TO BE REMOVED
         gameObject.AddComponent<Instantiate_UIElement_ModelObj>();//  Attaching ElementInstantiation script
 
         gameObject.GetComponent<ObjectDrag>().enabled = false;// Disabling the script
@@ -35,7 +35,7 @@ public class CreateGameObject
     {
         var gameObject = GameObject.Instantiate(prefab, position, Quaternion.identity);
         gameObject.AddComponent<ObjectDrag>();// Adding ObjectDrag script
-        gameObject.AddComponent<ObjectRotate>();// Adding ObjectRotate script
+        gameObject.AddComponent<ObjectRotate>();// Adding ObjectRotate script///    TO BE REMOVED
         gameObject.AddComponent<Instantiate_UIElement_InteriorObj>();// Adding Instantiate_UIElement_InteriorObj script
 
         gameObject.GetComponent<ObjectDrag>().enabled = false;// Disabling the script
